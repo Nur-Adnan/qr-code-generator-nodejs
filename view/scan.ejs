@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+
+    <!-- Latest Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f7fc;
+        color: #333;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #007bff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      a.btn-primary {
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      a.btn-primary:hover {
+        background-color: #0056b3;
+      }
+
+      a.btn-primary:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="<%= qr_code %>" alt="QR Code" />
+      <a href="/" role="button" class="btn btn-primary">Back</a>
+    </div>
+
+    <!-- Latest Bootstrap 4 JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
